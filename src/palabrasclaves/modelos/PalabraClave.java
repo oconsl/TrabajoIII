@@ -5,6 +5,7 @@
  */
 package palabrasclaves.modelos;
 
+import java.util.List;
 /**
  *
  * @author Otros

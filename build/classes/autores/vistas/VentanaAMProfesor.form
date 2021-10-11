@@ -42,7 +42,10 @@
                           <Component id="txtDNI" max="32767" attributes="0"/>
                           <Component id="txtApellidos" max="32767" attributes="0"/>
                           <Component id="passClave" alignment="0" max="32767" attributes="0"/>
-                          <Component id="txtCargo" max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="jComboBox1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
                       </Group>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
@@ -75,7 +78,7 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtCargo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -142,10 +145,13 @@
         <Property name="text" type="java.lang.String" value="Clave:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtCargo">
-      <Properties>
-        <Property name="toolTipText" type="java.lang.String" value="Nombres del profesor"/>
-      </Properties>
+    <Component class="javax.swing.JComboBox" name="jComboBox1">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBox1ActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;Cargo&gt;"/>
+      </AuxValues>
     </Component>
   </SubComponents>
 </Form>
