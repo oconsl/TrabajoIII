@@ -25,11 +25,11 @@ public class Publicacion {
     private Tipo tipo;
     private Idioma idioma;
     private Lugar lugar;
-    private ArrayList<PalabraClave> palabrasClave;
+    private List<PalabraClave> palabrasClave;
     private String enlace;
     private String resumen;
     
-    public Publicacion(String titulo,MiembroEnGrupo miembroEnGrupo,LocalDate fechaPublicacion,Tipo tipo,Idioma idioma, Lugar lugar, ArrayList<PalabraClave> palabrasClave, String enlace, String resumen) {
+    public Publicacion(String titulo,MiembroEnGrupo miembroEnGrupo,LocalDate fechaPublicacion,Tipo tipo,Idioma idioma, Lugar lugar, List<PalabraClave> palabrasClave, String enlace, String resumen) {
         this.titulo = titulo;
         this.miembroEnGrupo = miembroEnGrupo;
         this.fechaPublicacion = fechaPublicacion;
@@ -39,10 +39,6 @@ public class Publicacion {
         this.palabrasClave = palabrasClave;
         this.enlace = enlace;
         this.resumen = resumen;
-    }
-
-    public Publicacion(String título_2, MiembroEnGrupo miembroEnGrupo, LocalDate of, Tipo tipo2, Idioma idioma2, Lugar lugar2, List<PalabraClave> asList, String enlace_2, String resumen_2) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     public void asignarTitulo(String titulo){
@@ -105,7 +101,7 @@ public class Publicacion {
         return lugar;
     }
     
-    public ArrayList<PalabraClave> verPalabrasClave(){
+    public List<PalabraClave> verPalabrasClave(){
         return palabrasClave;
     }
     
